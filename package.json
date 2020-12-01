@@ -22,11 +22,15 @@
   },
   "homepage": "https://github.com/jordanstholmes/FoCal#readme",
   "dependencies": {
+    "@types/react-dom": "^17.0.0",
     "express": "^4.17.1",
     "jest": "^26.6.3",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/react": "^17.0.0",
     "ts-loader": "^8.0.11",
     "typescript": "^4.1.2",
     "webpack": "^5.9.0",
