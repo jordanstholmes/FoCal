@@ -1,10 +1,14 @@
 import * as React from 'react';
 import { useState } from 'react';
-import Goal from './Goal';
+import ConcreteTodo from '../models/ConcreteTodo';
 
-function Todo({ description, isDone }: Goal) {
-  const [text, setText] = useState(description);
-  const [done, setDone] = useState(isDone);
+interface TaskProps {
+  todo: ConcreteTodo;
+}
+
+function Task({ todo }: TaskProps) {
+  const [text, setText] = useState(todo.getText());
+  const [done, setDone] = useState(todo.getDoneStatus());
 
   return (
     <div draggable onDrag={() => console.log('I am being dragged!')}>
@@ -15,4 +19,4 @@ function Todo({ description, isDone }: Goal) {
   );
 }
 
-export default Todo;
+export default Task;
